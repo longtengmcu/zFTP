@@ -171,7 +171,7 @@ int cmd_ftp_download(int argc, char **argv)
     } 
     else
     {
-        zFTP_set_callback(ftp, file_write, file_read);
+        zFTP_set_callback(ftp, file_write, file_read, RT_NULL);
 
         zFTP_change_path(ftp, FTP_SVR_PATH);
 
