@@ -41,8 +41,8 @@
 *********************************************************************************************************/
 #define FTP_SVR_ADDR    "www.hgjzn.com" // "172.16.253.184"
 #define FTP_SVR_PATH    "LT-VC12"
-#define FTP_USER_NAME   "ftpadmin"
-#define FTP_PASSWORD    "1982long"
+#define FTP_USER_NAME   "xxxxxx"
+#define FTP_PASSWORD    "xxxxxx"
 #define FTP_FILENAME    "LT-VC12_V10.bin"
 #define FIRMWARE_FLASH_PARTITION  "firmware"
 #define FIRMWARE_STORE_ADDR        0

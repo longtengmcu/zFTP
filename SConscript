@@ -4,11 +4,11 @@ from building import *
 
 cwd = GetCurrentDir()
 src = Glob('src/*.c') + Glob('src/*.cpp')
-CPPPATH = [cwd + '/include']
+CPPPATH = [cwd + '/inc']
 
-if GetDepend(['TINYCRYPT_USING_AES_SAMPLE']):
+if GetDepend(['ZFTP_USING_SAMPLE']):
     src += Glob('samples/*.c')
 
-group = DefineGroup('TinyCrypt', src, depend = ['PKG_USING_ZFTP'], CPPPATH = CPPPATH)
+group = DefineGroup('zFTP', src, depend = ['PKG_USING_ZFTP'], CPPPATH = CPPPATH)
 
 Return('group')
