@@ -71,7 +71,10 @@ int zFTP_download_file(zftp_client *ftp, char *file_name)
 int zFTP_quit(zftp_client *ftp)  
 
 # How to Use
-See the zFTP_demo.c   
+See the zFTP_demo.c   use the command line: ftp file_name upload/dwload   
+You must define the FTP username,ftp password,ftp server ip, file path
+
+zFTP demo step:
 1. login the ftp server by the ftp = zFTP_login(FTP_USER_NAME, FTP_PASSWORD, FTP_SVR_ADDR)  
 2. set the file download callback function(file_write) and file upload callback function(file_read) by the zFTP_set_callback(ftp, file_write, file_read, RT_NULL)
 3. set the seriver file path by the zFTP_change_path(ftp, FTP_SVR_PATH)
